@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OzEquation — Independent Mobile Game Studio</title>
+<meta name="description" content="OzEquation is an independent mobile game studio based in Australia, designing and developing games for mobile. Currently in pre-production: Starving Burglar, an indoor extraction action roguelite for iOS and Android.">
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --text: #e8e6e1;
+    --muted: #9a9ca3;
+    --accent: #f2b544;
+    --line: #262a33;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 700; letter-spacing: .02em; font-size: 18px; color: var(--text); }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--muted); margin-left: 22px; font-size: 15px; }
+
+  .hero { padding: 96px 0 72px; }
+  .eyebrow { color: var(--accent); font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.12; margin: 14px 0 20px; }
+  .lead { color: var(--muted); font-size: 19px; max-width: 620px; margin: 0; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 26px; margin: 0 0 18px; }
+  p { margin: 0 0 14px; }
+
+  .game {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 32px;
+  }
+  .game h3 { font-size: 28px; margin: 6px 0 12px; }
+  .tag {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    color: var(--bg); background: var(--accent);
+    padding: 3px 10px; border-radius: 999px;
+  }
+  .meta { color: var(--muted); font-size: 15px; margin-top: 18px; }
+  .tagline { color: var(--accent); font-size: 19px; font-style: italic; margin: 0 0 18px; }
+  .features { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 14px; }
+  .features li { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; }
+  .features strong { display: block; color: var(--text); }
+  .features span { color: var(--muted); font-size: 16px; }
+
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Oz<span>Equation</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">Independent Game Studio · Australia</div>
+    <h1>We design and build games for mobile.</h1>
+    <p class="lead">OzEquation is a startup indie game studio focused on designing and developing mobile games.</p>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About the studio</h2>
+      <p>OzEquation is an early-stage, founder-led indie game studio based in Australia. The studio handles the whole process in-house — from game design and prototyping through to development and release on mobile platforms.</p>
+      <p>Staying small keeps the studio fast, hands-on, and close to the players it makes games for.</p>
+    </div>
+  </section>
+
+  <section id="games">
+    <div class="wrap">
+      <h2>Our games</h2>
+      <div class="game">
+        <span class="tag">Pre-production</span>
+        <h3>Starving Burglar <small style="font-size:14px;color:var(--muted);font-weight:400">(working title)</small></h3>
+        <p class="tagline">Steal enough to eat. Then steal a little more.</p>
+        <p>An indoor extraction action roguelite for iOS and Android. You play a starving, down-on-his-luck burglar who breaks into a building in search of food. Finding enough to survive doesn't end the job &mdash; you still have to reach an exit and choose to leave, and every extra room is a chance at a bigger haul and a bigger disaster.</p>
+        <p>Fight, dodge, or improvise your way out, and survive another day.</p>
+        <ul class="features">
+          <li><strong>Push your luck</strong><span>Meeting your food goal never ends the run for you. You decide when to cash out.</span></li>
+          <li><strong>Improvise with the building</strong><span>Topple shelves, electrify flooded floors, ride an office chair to safety &mdash; and watch the same tricks backfire on you.</span></li>
+          <li><strong>Cards that wear out</strong><span>Powerful abilities come with only a few uses and can't be repaired. Save it, or burn it now?</span></li>
+          <li><strong>Deadpan absurdity</strong><span>The humour comes from systems, item descriptions and ridiculous causes of death.</span></li>
+          <li><strong>Pixel art meets 3D</strong><span>Pixel-art characters in moody 3D interiors, built for mobile.</span></li>
+        </ul>
+        <p class="meta">Genre: Extraction action roguelite &middot; Platforms: iOS &amp; Android (planned) &middot; Built in Unity &middot; Currently in pre-production; a core-loop prototype is next.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>For business enquiries, partnerships or press, get in touch:</p>
+      <p><a href="mailto:larry@ozequation.com">larry@ozequation.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 OzEquation. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
